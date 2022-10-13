@@ -1,0 +1,2 @@
+# saman
+Tasnimda qilingan ishlar
