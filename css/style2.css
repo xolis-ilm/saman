@@ -327,13 +327,6 @@
 }
 /* END FOOTER */
 /* MEDIA */
-@media (max-width: 1190px) {
-  /* HEADER */
-  .head_wrap .menu li a {
-    padding: 0;
-  }
-}
-
 @media (max-width: 960px) {
   .head_wrap .menu li:last-child {
     display: none;
@@ -343,6 +336,10 @@
 @media (max-width: 785px) {
   .head_wrap .menu{
     display: none;
+  }
+  .head_wrap .menu li a{
+    padding: 16px;
+    white-space: nowrap;
   }
   .head_wrap .menu-icon {
     cursor: pointer;
@@ -386,11 +383,10 @@
   .head_wrap .menu-btn:checked ~ .menu{
     display: flex;
     flex-direction: column;
-    max-height: 500px;
     position: absolute;
-    top: 60px;
-    background-color: red;
-    padding: 16px;
+    background-color: #fff;
+    top: 56px;
+    width: 100%;
   }
   .head_wrap .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
@@ -410,5 +406,82 @@
   .menu li{
     padding: 16px;
   }
+  /* BUSINESS CLASS */
+  .business{
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .business .bus_text{
+    width: 90%;
+    margin-bottom: 56px;
+    margin-left: 56px;
+  }
+  .business .bus_video{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+    margin-left: 56px;
+  }
+  .business .bus_video iframe{
+    width: 100%;
+  }
+  /* END BUSSINESS */
+
+  /* SERVICES */
+  .services .serv_text{
+    width: 90%;
+  }
+  .serv_text{
+    width: 90%;
+  }
+  /* END SERVICES */
+
+  /* WORK */
+  .work .work_img{
+    margin-bottom: 56px;
+    flex-direction: column;
+  }
+  .work .img_right{
+    flex-direction: column-reverse;
+  }
+  .work_img .work_title{
+    margin-top: 16px;
+  }
+  /* END WORK */
+  /* ORDER */
+  .order_serv .serv_text{
+    width: 90%;
+  }
+  .order_serv form{
+
+  }
+  /* END ORDER */
+}@media (max-width: 600px){
+  /* FOOTER */
+  .footer{
+    flex-wrap: wrap;
+  }
+  .copy_right{
+    margin-bottom: 16px;
+  }
+  /* END FOOTER */
+}
+@media (max-width: 380px){
+  /* SERVICES */
+  .serv_btn .order{
+    text-align: center;
+  }
+  /* END SERVICES */
+  /* ORDER */
+  .order_serv form,
+  .order_serv form input,
+  .sel_type {
+    width: 90%;
+  }
+  /* END ORDER */
 }
 /* END MEDIA */
